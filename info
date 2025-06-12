@@ -381,3 +381,164 @@ Harika! Portfolyonun **SEO gücünü maksimuma çıkarmak** için aşağıdaki g
 
 İstersen bu yapının bir **React** ya da **Next.js** versiyonunu da sıfırdan senin için oluşturabilirim. Hatta TailwindCSS entegreli yapabilirim.
 Devam etmek ister misin? Hangi teknoloji ile inşa etmeyi planladığını da söylersen, kodu ona göre hazırlayalım.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Çox gözəl! Saytın artıq çox yaxşı vəziyyətdədir — xüsusən **SEO** nəticəsi `89` və **Best Practices** `100` olduqca yaxşı göstəricilərdir. Amma sən “Google-da developer axtarışında ilk sıralarda çıxmaq” istəyirsənsə, **bu nəticəni 100-ə çatdırmaq** və **əlaqəli kontenti artırmaq** vacibdir.
+
+### 🔍 SEO nəticəsini `89` → `100` etmək üçün təkmilləşdirmələr:
+
+---
+
+## ✅ 1. **Semantik HTML-də daha zənginləşdirmə (Section Tag'lar)**
+
+**Hazırkı vəziyyət:** SEO hissəsi güclü, amma daha semantik elementlər əlavə edilə bilər:
+
+```html
+<header> → <nav> → <main> → <section> → <article> → <aside> → <footer>
+```
+
+**Təklif:** Hər bölməyə uyğun `aria-label`, `role`, `itemprop`, `itemscope`, `itemtype` atributları əlavə et.
+
+---
+
+## ✅ 2. **`Schema.org` ilə Strukturlaşdırılmış Data əlavə et**
+
+Bu, Google-un səni “developer” olaraq daha yaxşı anlamasına imkan verir.
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Əliyev Tamerlan",
+  "url": "https://dainty-palmier-7a625b.netlify.app/",
+  "sameAs": [
+    "https://github.com/seninprofilin",
+    "https://linkedin.com/in/seninprofilin"
+  ],
+  "jobTitle": "Full Stack Developer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelancer / Valiance"
+  },
+  "alumniOf": "Azərbaycan Dövlət Neft və Sənaye Universiteti",
+  "knowsAbout": ["HTML", "CSS", "JavaScript", "C#", ".NET", "React", "SQL"],
+  "image": "https://dainty-palmier-7a625b.netlify.app/me.jpg"
+}
+</script>
+```
+
+📌 Bu `ld+json` script-i `<head>` tagının **altına** yerləşdir.
+
+---
+
+## ✅ 3. **Canonical Tag əlavə et**
+
+Duplicate URL problemini qarşısını alır:
+
+```html
+<link rel="canonical" href="https://dainty-palmier-7a625b.netlify.app/" />
+```
+
+---
+
+## ✅ 4. **Meta Tag'ları zənginləşdir**
+
+```html
+<meta name="author" content="Əliyev Tamerlan">
+<meta name="robots" content="index, follow">
+<meta name="language" content="en">
+<meta name="revisit-after" content="7 days">
+```
+
+---
+
+## ✅ 5. **Open Graph və Twitter Card əlavə et**
+
+Bu, sosial mediada düzgün görünməni təmin edir:
+
+```html
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Əliyev Tamerlan – Full Stack Developer Portfolio">
+<meta property="og:description" content="Professional full stack developer experienced in .NET, React, and web performance optimization.">
+<meta property="og:image" content="https://dainty-palmier-7a625b.netlify.app/preview.jpg">
+<meta property="og:url" content="https://dainty-palmier-7a625b.netlify.app/">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Əliyev Tamerlan – Full Stack Developer">
+<meta name="twitter:description" content="Explore my projects and skills in .NET, C#, JavaScript and more.">
+<meta name="twitter:image" content="https://dainty-palmier-7a625b.netlify.app/preview.jpg">
+```
+
+---
+
+## ✅ 6. **ALT atributlarını yoxla**
+
+PageSpeed SEO hissəsində `image alt` və ya `aria-label` olmaması problemi ola bilər. **Bütün şəkillərdə `alt=""` atributu mütləq olsun.**
+
+```html
+<img src="me.jpg" alt="Əliyev Tamerlan – Full Stack Developer">
+```
+
+---
+
+## ✅ 7. **Mobil Uyğunluq üçün Tapılan Problem:**
+
+📉 `CLS (Cumulative Layout Shift)` = `0.217` → bu yüksəkdir. Səbəb:
+
+* Font-ların gec yüklənməsi
+* Resim ölçülərinin müəyyən edilməməsi
+
+**Təklif:** Resimlərdə `width` və `height` atributları təyin et:
+
+```html
+<img src="..." alt="..." width="300" height="300" loading="lazy">
+```
+
+---
+
+## ✅ 8. **Performance → CLS & LCP düzəlişi**
+
+* `font-display: swap;` əlavə et (Google Fonts istifadə edirsə)
+* CSS və JS fayllarını `minify` et
+* `lazy load` tətbiq et şəkillərə və iframe-lərə
+
+---
+
+## SEO nəticəni daha da artırmaq üçün:
+
+* Sayta **blog bölməsi** əlavə et (məsələn, `developer olmaq üçün yol`, `React ilə Todo app`, və s.)
+* Bloglar Google-da axtarışda daha tez indekslənir.
+
+---
+
+İstəyirsənsə, sənə bu təkmilləşdirmələri əhatə edən **tam SEO-optimized HTML template** düzəldim. Bəs sən necə etmək istəyirsən — sıfırdan, yoxsa hazır kod üzərində dəyişiklik?

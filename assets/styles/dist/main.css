@@ -1,0 +1,161 @@
+@import url(./root.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+* .btn {
+  display: flex;
+  width: max-content;
+  height: max-content;
+  padding: var(--padding-button-medium);
+  gap: var(--gap-button-medium);
+  text-decoration: none;
+  color: var(--color-white);
+  border-radius: var(--radius-button-medium);
+  font-weight: var(--fw-medium);
+}
+* body {
+  background: var(--color-background);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+}
+* body .page-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  gap: var(--gap-body);
+}
+* body .page-wrapper .hero-section {
+  min-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  gap: var(--gap-section-main-container);
+  padding: var(--padding-body);
+}
+* body .page-wrapper .hero-section .profile {
+  display: flex;
+  gap: var(--gap-card-2xl);
+}
+* body .page-wrapper .hero-section .profile .social-links {
+  display: flex;
+  height: 100%;
+}
+* body .page-wrapper .hero-section .profile .social-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap-card-2xl);
+  height: 100%;
+}
+* body .page-wrapper .hero-section .profile .social-links ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .page-wrapper .hero-section .profile .social-links ul li a {
+  width: var(--size-full);
+  height: var(--size-full);
+  padding: var(--padding-icon-small);
+  color: var(--color-primary);
+  background: var(--color-accent);
+  border-radius: var(--radius-badge-icon);
+  border: 0.5px solid rgba(37, 235, 184, 0.8);
+  background: #3B5265;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+* body .page-wrapper .hero-section .profile .social-links ul li a:hover {
+  color: var(--color-accent);
+  background: var(--color-primary);
+  transition: all 0.3s ease;
+}
+* body .page-wrapper .hero-section .profile .profile-photo-wrapper {
+  display: flex;
+  width: var(--size-image-profile);
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-image-profile);
+}
+* body .page-wrapper .hero-section .profile .profile-photo-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-image-profile);
+}
+* body .page-wrapper .hero-section .profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  height: 100%;
+  justify-content: space-between;
+}
+* body .page-wrapper .hero-section .profile-info .hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-card-s);
+}
+* body .page-wrapper .hero-section .profile-info .hero-container .profile-name {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  color: var(--color-white);
+}
+* body .page-wrapper .hero-section .profile-info .hero-container .job-title {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-medium);
+  color: var(--color-white);
+}
+* body .page-wrapper .hero-section .profile-info .profile-cta {
+  display: flex;
+  gap: var(--gap-section-main-container);
+  flex-direction: column;
+}
+* body .page-wrapper .hero-section .profile-info .profile-cta .description {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-white), var(--color-primary));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 12s linear infinite;
+  font-weight: var(--fw-medium);
+}
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+* body .page-wrapper .hero-section .profile-info .profile-cta .cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-card-2xl);
+}
+* body .page-wrapper .hero-section .profile-info .profile-cta .cta-buttons .btn-secondary {
+  background: var(--color-accent);
+}
+* body .page-wrapper .hero-section .profile-info .profile-cta .cta-buttons .btn-secondary:hover {
+  background: var(--color-primary);
+  color: var(--color-background);
+  transition: all 0.3s ease-out;
+}
+* body .page-wrapper .hero-section .profile-info .profile-cta .cta-buttons .btn-primary {
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+* body .page-wrapper .hero-section .profile-info .profile-cta .cta-buttons .btn-primary:hover {
+  transition: all 0.3s ease-out;
+}
+* body main {
+  background: #c9c9c923;
+  min-width: 60%;
+}
