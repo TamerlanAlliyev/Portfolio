@@ -1,0 +1,383 @@
+Süper hedef! Gerçekten güçlü bir SEO yapısı kurmak istiyorsan, HTML yapına sadece semantik etiketler eklemekle kalmamalı, aynı zamanda **arama motorlarına zengin içerik (rich data)** sağlamalı ve **arama niyetiyle eşleşen anahtar kelimeleri** stratejik yerleştirmelisin.
+
+Aşağıda verdiğim örnek, SEO için **maksimum optimizasyon** içerir:
+
+---
+
+### 🔥 Öne Çıkan SEO Eklemeleri:
+
+* `schema.org` yapılandırılmış veri (JSON-LD formatında)
+* Geliştirilmiş meta etiketler (Open Graph, Twitter Cards, robots)
+* Anahtar kelime odaklı başlıklar ve içerik
+* Erişilebilirlik (`aria` ve `alt` etiketleri)
+* Canonical ve hreflang gibi teknik detaylar
+
+---
+
+### ✅ Ultra SEO Optimize Edilmiş Geliştirici Portfolyo HTML Şablonu
+
+```html
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Başlık ve Açıklama -->
+  <title>Aliyev Tamerlan | Full Stack Web Developer (.NET, React)</title>
+  <meta name="description" content="Aliyev Tamerlan, modern web teknolojileriyle profesyonel çözümler sunan deneyimli bir Full Stack Web Developer. .NET, React ve SEO dostu projeler geliştiriyorum." />
+  <meta name="keywords" content="Web Developer, Full Stack Developer, Yazılım Geliştirici, .NET Developer, React Developer, SEO, Frontend, Backend, Web Geliştirici, Tamerlan Aliyev" />
+  <meta name="author" content="Aliyev Tamerlan" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical & Language -->
+  <link rel="canonical" href="https://www.tamerlan.dev/" />
+  <link rel="alternate" hreflang="tr" href="https://www.tamerlan.dev/" />
+
+  <!-- Sosyal Medya: Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aliyev Tamerlan | Full Stack Web Developer" />
+  <meta property="og:description" content=".NET ve React uzmanı geliştirici olarak modern, hızlı ve güvenli web uygulamaları geliştiriyorum." />
+  <meta property="og:url" content="https://www.tamerlan.dev/" />
+  <meta property="og:image" content="https://www.tamerlan.dev/images/preview.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aliyev Tamerlan | Full Stack Developer" />
+  <meta name="twitter:description" content="Performans odaklı ve SEO uyumlu web çözümleri sunan profesyonel web geliştirici." />
+  <meta name="twitter:image" content="https://www.tamerlan.dev/images/preview.jpg" />
+
+  <!-- Yapılandırılmış Veri (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aliyev Tamerlan",
+    "url": "https://www.tamerlan.dev/",
+    "image": "https://www.tamerlan.dev/images/profile.jpg",
+    "jobTitle": "Full Stack Web Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/aliyev-tamerlan",
+      "https://github.com/aliyev-tamerlan"
+    ]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <nav aria-label="Ana Navigasyon">
+      <ul>
+        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#projects">Projeler</a></li>
+        <li><a href="#skills">Yetenekler</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Full Stack Web Developer - Aliyev Tamerlan</h1>
+      <p>.NET ve React uzmanı, SEO dostu modern web projeleri geliştiriyorum.</p>
+    </section>
+
+    <section id="about">
+      <h2>Hakkımda</h2>
+      <p>Ben Aliyev Tamerlan, modern teknolojilere odaklanan, güçlü performansa ve erişilebilirliğe sahip web uygulamaları geliştiren bir yazılım geliştiricisiyim. Özellikle .NET ve React alanlarında uzmanlaştım.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Web Geliştirici Projeleri</h2>
+
+      <article>
+        <h3>Instagram Analiz Aracı</h3>
+        <p>Meta API verilerini analiz ederek sosyal medya stratejilerini optimize etmenizi sağlayan güçlü bir araç.</p>
+        <a href="https://github.com/aliyev-tamerlan/instagram-analiz" target="_blank" rel="noopener">Proje Detayları</a>
+      </article>
+
+      <article>
+        <h3>Vanguard E-Ticaret Platformu</h3>
+        <p>Özelleştirilmiş yönetim paneli ve SEO dostu ürün yapısı ile geliştirilen tam donanımlı e-ticaret sistemi.</p>
+        <a href="https://github.com/aliyev-tamerlan/vanguard-ecommerce" target="_blank" rel="noopener">Proje Detayları</a>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Yazılım ve Web Geliştirme Yetenekleri</h2>
+      <ul>
+        <li>.NET Core, Entity Framework Core</li>
+        <li>React.js, Redux Toolkit</li>
+        <li>SQL Server, REST API Entegrasyonu</li>
+        <li>Responsive Web Design, SEO Teknikleri</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Benimle İletişime Geçin</h2>
+      <p>Eğer bir işbirliği veya proje hakkında konuşmak isterseniz, bana aşağıdaki kanallardan ulaşabilirsiniz.</p>
+      <address>
+        <a href="mailto:aliyev.tamerlan@example.com">aliyev.tamerlan@example.com</a><br />
+        <a href="https://www.linkedin.com/in/aliyev-tamerlan" target="_blank" rel="noopener">LinkedIn Profilim</a>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aliyev Tamerlan. Tüm hakları saklıdır. | <a href="/sitemap.xml">Site Haritası</a></p>
+  </footer>
+</body>
+</html>
+```
+
+---
+
+### 🎯 Ekstra SEO Tüyoları
+
+| Teknik                        | Açıklama                                                                     |
+| ----------------------------- | ---------------------------------------------------------------------------- |
+| `sitemap.xml` ve `robots.txt` | Google'ın siteyi doğru indekslemesini sağlar.                                |
+| Sayfa Başlığı (`<title>`)     | Anahtar kelimeyle başlasın ve maksimum 60 karakter olsun.                    |
+| Sayfa Hızı                    | Lighthouse skorun 90+ olmalı (resim optimizasyonu, lazy loading, minify vs). |
+| İçerik Sıklığı                | Sayfa içeriğinde anahtar kelimeleri %1–2 oranında doğal olarak kullan.       |
+| Alt Etiketleri                | Tüm görsellerde `alt="açıklayıcı metin"` kullan.                             |
+| Mobil Uyumluluk               | Mutlaka responsive olmalı.                                                   |
+| SSL                           | HTTPS zorunlu.                                                               |
+
+---
+
+İstersen bu yapıyı sana özel olarak `.NET`, `React`, veya `Next.js` projelerine entegre edebilirim.
+Hazırsan beraber sitemap.xml dosyasını, robots.txt dosyasını ve içerik stratejini de oluşturabiliriz. Devam edelim mi?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Harika! Portfolyonun **SEO gücünü maksimuma çıkarmak** için aşağıdaki gibi daha da zenginleştirilmiş bir HTML şablonu hazırladım. Bu sürümde:
+
+---
+
+### 🚀 Ekstra Geliştirmeler:
+
+* Daha detaylı `schema.org` JSON-LD veri yapısı (hem `Person` hem de `WebSite` tipiyle)
+* Ek `aria` özellikleri ile erişilebilirlik artırıldı
+* `hreflang`, `alternate`, `canonical`, `robots`, `geo` gibi teknik SEO detaylar eklendi
+* Görsellere `loading`, `width`, `height`, `alt` ve `title` özellikleri eklendi
+* Sitemap ve hreflang desteği
+* Kullanıcı deneyimi için `aria-label`, `role`, `lang` gibi semantik açıklamalar
+
+---
+
+### ✅ Ultra-Zengin SEO'lu HTML Şablon:
+
+```html
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: Temel Bilgiler -->
+  <title>Aliyev Tamerlan | Full Stack Web Developer (.NET & React Uzmanı)</title>
+  <meta name="description" content="Profesyonel .NET ve React uzmanı Full Stack Web Developer. Hızlı, güvenli ve SEO dostu web uygulamaları geliştiriyorum." />
+  <meta name="keywords" content="Web Developer, Full Stack Developer, .NET Developer, React Developer, SEO, Yazılım Geliştirici, Frontend, Backend, Aliyev Tamerlan" />
+  <meta name="author" content="Aliyev Tamerlan" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- Canonical & Dil -->
+  <link rel="canonical" href="https://www.tamerlan.dev/" />
+  <link rel="alternate" hreflang="tr" href="https://www.tamerlan.dev/" />
+  <link rel="alternate" hreflang="en" href="https://www.tamerlan.dev/en" />
+
+  <!-- Sosyal Medya: Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:title" content="Aliyev Tamerlan | Full Stack Developer" />
+  <meta property="og:description" content=".NET ve React teknolojileriyle performans odaklı, modern web uygulamaları geliştiriyorum." />
+  <meta property="og:url" content="https://www.tamerlan.dev/" />
+  <meta property="og:image" content="https://www.tamerlan.dev/images/preview.jpg" />
+  <meta property="og:site_name" content="Aliyev Tamerlan Portfolio" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@aliyev_tamerlan" />
+  <meta name="twitter:title" content="Aliyev Tamerlan | Full Stack Developer" />
+  <meta name="twitter:description" content="Performanslı ve SEO uyumlu web projeleri geliştiriyorum." />
+  <meta name="twitter:image" content="https://www.tamerlan.dev/images/preview.jpg" />
+
+  <!-- Structured Data: Person & Website -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aliyev Tamerlan",
+    "url": "https://www.tamerlan.dev/",
+    "image": "https://www.tamerlan.dev/images/profile.jpg",
+    "jobTitle": "Full Stack Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/aliyev-tamerlan",
+      "https://github.com/aliyev-tamerlan"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Aliyev Tamerlan Portfolio",
+    "url": "https://www.tamerlan.dev",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.tamerlan.dev/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Geo Metadata (opsiyonel ama SEO katkısı var) -->
+  <meta name="geo.region" content="AZ" />
+  <meta name="geo.placename" content="Baku" />
+  <meta name="geo.position" content="40.4093;49.8671" />
+  <meta name="ICBM" content="40.4093, 49.8671" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body>
+  <header role="banner" aria-label="Üst menü">
+    <nav role="navigation" aria-label="Ana navigasyon">
+      <ul>
+        <li><a href="#about" aria-label="Hakkımda bölümüne git">Hakkımda</a></li>
+        <li><a href="#projects" aria-label="Projeler bölümüne git">Projeler</a></li>
+        <li><a href="#skills" aria-label="Yetenekler bölümüne git">Yetenekler</a></li>
+        <li><a href="#contact" aria-label="İletişim bölümüne git">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section id="hero" aria-label="Giriş Bölümü">
+      <h1>Aliyev Tamerlan - Full Stack Web Developer</h1>
+      <p>.NET ve React ile hızlı, erişilebilir ve SEO dostu web uygulamaları geliştiriyorum.</p>
+      <img src="/images/profile.jpg" alt="Aliyev Tamerlan Profil Fotoğrafı" loading="lazy" width="300" height="300" />
+    </section>
+
+    <section id="about">
+      <h2>Hakkımda</h2>
+      <p>Modern frontend ve backend teknolojilerine hakim, kullanıcı odaklı çözümler üreten profesyonel bir geliştiriciyim. React, .NET, Entity Framework, REST API gibi teknolojilerle çalışıyorum.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projelerim</h2>
+
+      <article itemscope itemtype="https://schema.org/CreativeWork">
+        <h3 itemprop="name">Instagram Analiz Aracı</h3>
+        <p itemprop="description">Instagram takipçi verilerini Meta API üzerinden analiz ederek kullanıcı davranışlarını ölçen araç.</p>
+        <a href="https://github.com/aliyev-tamerlan/instagram-analiz" target="_blank" rel="noopener" itemprop="url">Detaylar</a>
+      </article>
+
+      <article itemscope itemtype="https://schema.org/CreativeWork">
+        <h3 itemprop="name">Vanguard E-Ticaret Platformu</h3>
+        <p itemprop="description">Kapsamlı ürün yönetimi, güvenli ödeme sistemleri ve SEO uyumlu altyapısıyla gelişmiş bir e-ticaret çözümü.</p>
+        <a href="https://github.com/aliyev-tamerlan/vanguard-ecommerce" target="_blank" rel="noopener" itemprop="url">Detaylar</a>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Yetenekler</h2>
+      <ul>
+        <li>.NET Core, ASP.NET MVC</li>
+        <li>React, Next.js, Redux Toolkit</li>
+        <li>SQL Server, Entity Framework</li>
+        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+        <li>SEO Optimizasyonu, Performans Analizi</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-label="İletişim Formu">
+      <h2>İletişime Geçin</h2>
+      <address>
+        <p>E-posta: <a href="mailto:aliyev.tamerlan@example.com">aliyev.tamerlan@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/aliyev-tamerlan" target="_blank" rel="noopener">Profilim</a></p>
+        <p>GitHub: <a href="https://github.com/aliyev-tamerlan" target="_blank" rel="noopener">Projelerim</a></p>
+      </address>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Aliyev Tamerlan | <a href="/sitemap.xml">Site Haritası</a></p>
+  </footer>
+</body>
+</html>
+```
+
+---
+
+### 📈 İleri Seviye Öneriler
+
+| Alan                   | Öneri                                                                             |
+| ---------------------- | --------------------------------------------------------------------------------- |
+| **Sitemap.xml**        | `/sitemap.xml` dosyası ekle ve Google Search Console'a gönder                     |
+| **robots.txt**         | `User-agent: *` + `Allow: /` + `Sitemap:` belirt                                  |
+| **Sayfa İçi İçerik**   | Anahtar kelimeleri doğal şekilde <strong>kullanıcı odaklı içerikte</strong> geçir |
+| **PageSpeed Insights** | Sayfa hızını 90+ olacak şekilde optimize et                                       |
+| **Blog**               | “.NET vs Node.js”, “React ile SEO” gibi başlıklarla içerik üret                   |
+
+---
+
+İstersen bu yapının bir **React** ya da **Next.js** versiyonunu da sıfırdan senin için oluşturabilirim. Hatta TailwindCSS entegreli yapabilirim.
+Devam etmek ister misin? Hangi teknoloji ile inşa etmeyi planladığını da söylersen, kodu ona göre hazırlayalım.
