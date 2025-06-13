@@ -138,14 +138,75 @@
         </div>
       </div>
 
-
     </section>
 
 
     <main role="main">
-      a
+      <section id="about" class="main-section" aria-labelledby="about-heading" itemscope
+        itemtype="https://schema.org/Person">
+        <header class="section-header">
+          <h2 id="about-heading" role="heading" aria-level="2">About</h2>
+        </header>
+
+        <div class="section-content">
+
+          <p itemprop="description" class="description" lang="en" aria-label="Developer introduction and background">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fugit odio deserunt tempore laborum
+            necessitatibus delectus eaque nesciunt rerum fugiat. Ducimus sequi, blanditiis, facilis obcaecati eaque
+            impedit iste suscipit commodi,
+
+            quibusdam recusandae corrupti assumenda sapiente voluptatem consectetur
+            autem. Est enim harum amet? Odio quas ratione quam vero a, maxime numquam ipsa cumque ex eligendi incidunt
+            impedit distinctio laboriosam pariatur accusantium ut aliquid voluptate eum placeat. Voluptatem ducimus
+            nobis
+
+            illum error officia et illo placeat, beatae esse, expedita commodi aliquam exercitationem doloremque
+            id cupiditate odio ad aspernatur consequuntur laudantium fugiat corporis totam? Maiores, repudiandae
+            incidunt ratione harum earum corrupti ducimus dolores exercitationem. Optio dignissimos ipsa aut dolores
+            voluptatum. Beatae mollitia quis quo voluptate vitae dignissimos deleniti similique laborum ab, molestias
+            ullam sit aperiam eveniet ratio
+            ne impedit odit asperiores voluptates! Sit illum velit illo facere, magni
+            quos quisquam nostrum soluta odio ad accusantium? Delectus dignissimos molestiae voluptatem sint recusandae
+            natus vel pariatur, expedita esse quis. Quae magnam consequatur aliquam molestias perspiciatis voluptatibus
+            eligendi voluptatem porro laborum, quasi minus repellendus error aspernatur, explicabo rem ratione,
+            perferendis iusto mollitia reiciendis totam excepturi pariatur doloremque ab quibusdam. Vitae tempore
+            obcaecat
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="main-section" aria-labelledby="skills-heading" itemscope
+        itemtype="https://schema.org/Person">
+        <header class="section-header">
+          <h2 id="skills-heading" role="heading" aria-level="2">Skills</h2>
+        </header>
+        <div class="section-content">
+          <ul>
+            <li itemprop="skills" itemscope itemtype="https://schema.org/DefinedTerm">
+              <meta itemprop="name" content="JavaScript">
+              JavaScript
+            </li>
+            <li itemprop="skills" itemscope itemtype="https://schema.org/DefinedTerm">
+              <meta itemprop="name" content="C#">
+              C#
+            </li>
+            <li itemprop="skills" itemscope itemtype="https://schema.org/DefinedTerm">
+              <meta itemprop="name" content="ASP.NET Core">
+              ASP.NET Core
+            </li>
+            <!-- diğer beceriler... -->
+          </ul>
+        </div>
+      </section>
+
+
     </main>
   </div>
+  <script>
+    const p = document.querySelector(".section-content p");
+    p.textContent = p.textContent.trim();
+    console.log(p)
+  </script>
 </body>
 
 </html>

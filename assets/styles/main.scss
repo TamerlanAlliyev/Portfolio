@@ -200,8 +200,41 @@
         }
 
         main {
-            background: #c9c9c923;
+            background: #8383830c;
             width: 100%;
+
+            .main-section {
+                display: flex;
+                flex-direction: column;
+                gap: var(--gap-section-main-container);
+
+                .section-header {
+                    padding: var(--padding-section-header);
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, rgba(153, 153, 153, 0.05) 100%);
+                    backdrop-filter: blur(15px);
+                    text-transform: uppercase;
+
+                    h2 {
+                        font-size: var(--fs-section-title);
+                        font-weight: var(--fw-bold);
+                        color: var(--color-white);
+                    }
+                }
+
+                .section-content {
+                    font-size: var(--fs-info);
+                    font-weight: var(--fw-regular);
+                    color: var(--color-secondary);
+                    padding: var(--padding-main-section);
+
+                    .description {
+                        white-space: pre-line;
+                        line-height: var(--text-line-height);
+                        /* 137.5% */
+                    }
+
+                }
+            }
         }
 
     }
@@ -229,6 +262,8 @@
 
                             .description {
                                 width: 70%;
+                                line-height: var(--text-line-height);
+
                             }
 
                             .cta-buttons {
@@ -244,6 +279,7 @@
 
             main {
                 min-width: 60%;
+
             }
         }
     }
@@ -287,6 +323,8 @@
 
             main {
                 min-width: 60%;
+                padding: var(--padding-body);
+
             }
         }
     }

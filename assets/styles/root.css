@@ -48,7 +48,10 @@
     --radius-form: 16px;
 
     /* 📦 Padding */
-    --padding-body: 40px;/**/
+    --padding-body: 40px;
+    /**/
+    --padding-main-section: 0 40px;
+    /**/
     --padding-header: 0 40px;
     --padding-button-medium: 12px 16px;
     --padding-section-header: 14px 28px;
@@ -92,6 +95,8 @@
     /* 1/1 */
     --size-icon: 14px;
     --size-card-main-icon: 25px;
+
+    --text-line-height: 140%;
 }
 
 
@@ -99,6 +104,7 @@
     :root {
         /* 📦 Padding */
         --padding-body: 60px;
+        --padding-main-section: 0 60px;
     }
 }
 
@@ -106,6 +112,7 @@
     :root {
         /* 📦 Padding */
         --padding-body: 90px 0;
-        --padding-page-wrapper:0 40px;
+        --padding-main-section: 0;
+        --padding-page-wrapper: 0 40px;
     }
 }
