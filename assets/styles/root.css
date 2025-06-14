@@ -7,7 +7,7 @@
     --color-accent: #3b5265;
     --color-surface: #1c3041;
     --color-background: #05172b;
-    --color-text-primary-linear: linear-gradient(90deg, #25EBB8 0%, #ffffff94 100%);
+    --color-text-primary-linear: linear-gradient(18deg, var(--color-secondary) 0%, var(--color-primary) 50%, var(--color-secondary) 100%);
 
     /* 🔤 Font Sizes */
     --fs-h1: 35px;
@@ -25,6 +25,9 @@
     --fs-label: 14px;
     --fs-label-value: 14px;
     --fs-placeholder: 14px;
+
+    --fs-icon: 14px;
+
 
     /* 🔠 Font Weights */
     --fw-regular: 400;
@@ -48,7 +51,7 @@
     --radius-form: 16px;
 
     /* 📦 Padding */
-    --padding-body: 40px;
+    --padding-body: 30px 28px;
     /**/
     --padding-main-section: 0 40px;
     /**/
@@ -64,6 +67,9 @@
     --padding-input: 12px 18px;
 
     --padding-icon-small: 8px;
+    --padding-icon-medium: 14px;
+    --padding-section: 0 28px;
+
 
     /* 🔳 Gap */
     --gap-body: 40px;
@@ -84,6 +90,8 @@
     --gap-list-medium: 20px;
     --gap-button-medium: 10px;
 
+    --gap-xs: 6px;
+
     /* 📏 Sizes */
     --size-full: 100%;
 
@@ -94,9 +102,14 @@
     --size-image-profile: 250px;
     /* 1/1 */
     --size-icon: 14px;
+
     --size-card-main-icon: 25px;
 
-    --text-line-height: 140%;
+
+    --size-icon-medium: 50px;
+
+    --text-line-height-small: 128%;
+    --text-line-height-medium: 140%;
 }
 
 
@@ -114,5 +127,7 @@
         --padding-body: 90px 0;
         --padding-main-section: 0;
         --padding-page-wrapper: 0 40px;
+        --padding-section: 0;
+
     }
 }
