@@ -264,7 +264,7 @@
                     .card-item {
                         padding: var(--padding-card-big);
                         display: flex;
-                        flex-direction: column; // row
+                        flex-direction: column;
                         gap: var(--gap-card);
                         position: relative;
                         border-radius: 16px;
@@ -285,7 +285,7 @@
                             padding: 1px;
                             border-radius: 16px;
                             background: linear-gradient(145deg, #3deebf88, #1c1d1f);
-                            opacity: 0;
+                            opacity: 1;
                             transition: opacity 0.3s ease;
                             -webkit-mask:
                                 linear-gradient(#fff 0 0) content-box,
@@ -297,9 +297,6 @@
 
                         }
 
-                        &:hover::before {
-                            opacity: 1;
-                        }
                     }
                 }
             }
@@ -648,6 +645,7 @@
 
                 .education-item {
                     gap: var(--gap-card-xs);
+
                     .education-date {
                         width: 100%;
                         font-size: var(--fs-card-label);
@@ -659,14 +657,15 @@
                         width: 100%;
                         display: flex;
                         flex-direction: column;
-                            gap: var(--gap-card-xl);
+                        gap: var(--gap-card-xl);
 
-                        .education-info{
+                        .education-info {
                             display: flex;
                             flex-direction: column;
-                        gap: var(--gap-card-s);
+                            gap: var(--gap-card-s);
 
                         }
+
                         .education-header {
                             display: flex;
                             justify-content: space-between;
@@ -824,6 +823,14 @@
                     .big-card-list {
                         .card-item {
                             flex-direction: row;
+
+                            &::before {
+                                 opacity: 0;
+                            }
+
+                            &:hover::before {
+                                opacity: 1;
+                            }
                         }
                     }
                 }
