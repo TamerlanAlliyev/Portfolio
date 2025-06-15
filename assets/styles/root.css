@@ -26,6 +26,7 @@
     --fs-label-value: 14px;
     --fs-placeholder: 14px;
 
+    --fs-icon-small: 12px;
     --fs-icon: 14px;
 
 
@@ -50,6 +51,8 @@
     --radius-input: 8px;
     --radius-form: 16px;
 
+    --radius-badge:100px;
+
     /* 📦 Padding */
     --padding-body: 30px 28px;
     /**/
@@ -71,6 +74,7 @@
     --padding-section: 0 28px;
 
 
+
     /* 🔳 Gap */
     --gap-body: 40px;
     --gap-section: 60px;
@@ -84,7 +88,7 @@
     --gap-card-l: 14px;
     --gap-card-xl: 16px;
     --gap-card-2xl: 20px;
-    --gap-card: 24px;
+    --gap-card: 14px; /*24*/
     --gap-card-medium: 16px;
 
     --gap-list-medium: 20px;
@@ -118,6 +122,9 @@
         /* 📦 Padding */
         --padding-body: 60px;
         --padding-main-section: 0 60px;
+
+                /* 🔳 Gap */
+        --gap-card: 24px;
     }
 }
 
@@ -129,5 +136,7 @@
         --padding-page-wrapper: 0 40px;
         --padding-section: 0;
 
+        /* 🔳 Gap */
+        --gap-card: 24px;
     }
 }
