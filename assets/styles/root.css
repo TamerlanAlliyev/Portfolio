@@ -2,6 +2,7 @@
     /* 🎨 Colors */
     --color-white: #ffffff;
     --color-primary: #27e9b5;
+    --color-primary-dark: #1fa782;
     --color-primary-soft: rgba(0, 150, 111, 0.2);
     --color-secondary: #94a7b8;
     --color-accent: #3b5265;
@@ -28,6 +29,7 @@
 
     --fs-icon-small: 12px;
     --fs-icon: 14px;
+    --fs-button-small: 12px;
 
 
     /* 🔠 Font Weights */
@@ -51,7 +53,7 @@
     --radius-input: 8px;
     --radius-form: 16px;
 
-    --radius-badge:100px;
+    --radius-badge: 100px;
 
     /* 📦 Padding */
     --padding-body: 30px 28px;
@@ -72,6 +74,7 @@
     --padding-icon-small: 8px;
     --padding-icon-medium: 14px;
     --padding-section: 0 28px;
+    --padding-button-small: 8px 12px;
 
 
 
@@ -82,16 +85,19 @@
     --gap-section-container: 24px;
     --gap-container: 16px;
     --gap-list: 12px;
+    --gap-card-xxs: 4px;
     --gap-card-xs: 6px;
     --gap-card-s: 8px;
     --gap-card-m: 10px;
     --gap-card-l: 14px;
     --gap-card-xl: 16px;
     --gap-card-2xl: 20px;
-    --gap-card: 14px; /*24*/
+    --gap-card: 14px;
+    /*24*/
     --gap-card-medium: 16px;
 
     --gap-list-medium: 20px;
+    --gap-button-small: 8px;
     --gap-button-medium: 10px;
 
     --gap-xs: 6px;
@@ -123,7 +129,7 @@
         --padding-body: 60px;
         --padding-main-section: 0 60px;
 
-                /* 🔳 Gap */
+        /* 🔳 Gap */
         --gap-card: 24px;
     }
 }
