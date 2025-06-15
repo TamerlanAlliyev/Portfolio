@@ -241,8 +241,8 @@
   inset: 0;
   padding: 1px;
   border-radius: 16px;
-  background: linear-gradient(145deg, #3deebf88, #1c1d1f);
-  opacity: 1;
+  background: linear-gradient(145deg, var(--color-primary-dark), var(--color-surface));
+  opacity: 0.5;
   transition: opacity 0.3s ease;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
